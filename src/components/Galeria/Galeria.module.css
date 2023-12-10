@@ -1,0 +1,32 @@
+/* Galeria.module.css */
+
+.imgProduto {
+  width: 100%;
+  height: auto;
+}
+
+.imgMinGaleria {
+  width: 50px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.imgControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 600px) {
+  .imgControl {
+    padding: 0.5rem;
+  }
+
+  .imgMinGaleria {
+    width: 30px;
+    margin: 0 3px;
+  }
+}

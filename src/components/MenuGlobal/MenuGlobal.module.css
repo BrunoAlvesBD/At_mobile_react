@@ -1,0 +1,47 @@
+/* MenuGlobal.module.css */
+
+.menuNav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1rem;
+}
+
+.itemNav {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.itemNav:hover {
+  color: #1e85f7;
+}
+
+.itemNavHome {
+  font-weight: bold;
+  font-weight:1.5em;
+}
+
+.itemNavToggle {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .itemNavToggle {
+    display: block;
+  }
+
+  .itemNav {
+    display: none;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .itemNavHome {
+    font-size: 1.5rem;
+  }
+
+  .menuNav.active .itemNav {
+    display: block;
+  }
+}

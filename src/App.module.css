@@ -1,0 +1,104 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+/* App.module.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-bar {
+  background-color: #2196F3;
+}
+
+.app-title {
+  flex-grow: 1;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.friend-list {
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+
+.friend-list img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.post-card {
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+.post-card img {
+  width: 100%;
+  height: auto;
+}
+
+.post-card-content {
+  padding: 1rem;
+}
+
+.post-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #f3f3f3;
+}
+
+.comments-list {
+  padding: 0 1rem;
+  list-style: none;
+  margin: 0;
+}
+
+.comments-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.comments-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #2196F3;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 10px;
+  }
+
+  .friend-list {
+    padding: 0.5rem;
+  }
+
+  .post-card {
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-card-content,
+  .post-card-actions {
+    padding: 0.5rem;
+  }
+}
